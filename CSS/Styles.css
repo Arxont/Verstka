@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /* mobile*/
     .col-s1 {width: 8.33%;}
     .col-s2 {width: 16.66%;}
@@ -14,7 +14,11 @@
     .col-s9 {width: 75%;}
     .col-s10 {width: 83.33%;}
     .col-s11 {width: 91.66%;}
-    .col-s12 {width: 100%;}   
+    .col-s12 {width: 100%;
+      display: flex;
+      max-width: 320px;
+      margin: auto;
+      justify-content: space-between;}   
 }
 
 @media only screen and (min-width: 768px) {
@@ -30,7 +34,11 @@
     .col-m9 {width: 75%;}
     .col-m10 {width: 83.33%;}
     .col-m11 {width: 91.66%;}
-    .col-m12 {width: 100%;}   
+    .col-m12 {width: 100%;
+      display: flex;
+      max-width: 768px;
+      margin: auto;
+      justify-content: space-between;}   
 }
 
 
@@ -47,10 +55,297 @@
     .col-9 {width: 75%;}
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-12 {width: 100%;
+    display: flex;
+    max-width: 1124px;
+    margin: auto;
+    justify-content: space-between;
+}
 }
 
 .header{
-    background-color: blue;
     display: flex;
+  border-bottom: solid;
+  border-radius: 2px;
+  border-color:  #e7e7e7;
 }
+header_m{
+  display: none;
+}
+.header_logo{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+  }
+  .uber_part{
+   color:black;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  .eats_part{
+    margin-left:5px;
+    color:green;
+    letter-spacing: 3px;
+  }
+  .header_search{
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+   } 
+   .imput_wrapper{
+     display:flex;
+     height: 40px;
+     border-width: 1px;
+     border-style: solid;
+     border-radius: 1px;
+     margin-left:9px;
+     margin-top: 1%;
+     margin-bottom: 1%;
+     border-color: #e7e7e7;
+   }
+   
+   .header_search_icon{
+     display: flex;
+     align-items: center;
+   }
+   .street_search {
+    height: 38px;
+    width: 215px;
+    border-style: none;
+    Font Family: Roboto;
+    Font Style Regular;
+    Font Size: 16px;
+    Line Height: 24px;
+   } 
+    .header_asap{
+     font-weight: bold;
+     font-size:13px;
+     font-style: medium;
+     font-family:roboto;
+     line-height: 24px;
+     border-radius: 4px;
+     height: 40px;
+     width: 57px;
+     margin-top: 1%;
+     margin-bottom: 1%;
+     background-color:white;
+    } 
+
+    .header_login{
+        display: flex;
+        margin-top: 16px;
+        margin-bottom: 16px; 
+      }
+      
+      .bag_icon{
+        font-size: 30px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+       }
+      
+      .header_signin{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size:13px;
+        font-style: medium;
+        font-family:roboto;
+        line-height: 24px;
+        border-radius: 2px;
+        border-color: #e7e7e7;
+        height: 40px;
+        width: 80px;
+        margin-top: 1%;
+        margin-right:5%;
+        margin-bottom: 1%;
+        
+      }
+      .header_reg{
+        background-color: black;
+        border-style: none;
+        color: White;
+        font-weight: bold;
+        font-size:13px;
+        font-style: medium;
+        font-family:roboto;
+        line-height: 24px;
+        border-radius: 2px;
+        height: 40px;
+        width: 80px;
+        margin-top: 1%;
+        margin-right:5%;
+        margin-bottom: 1%;
+      }
+
+      .restsearch{
+        display: flex;
+        height:48px;
+        width:100%;
+      }
+      
+      .restsearch_wrapper{
+        display: flex;
+        width:100%;
+        height:100%; 
+        border-bottom: solid;
+        border-radius: 2px;
+        border-color:  #e7e7e7;
+      }
+      .body_search_icon{
+        display: flex;
+        align-items: center;
+     }
+      .body_search{
+        width:100%;
+        height:100%;
+        border-style: none;
+        font-weight: bold;
+        font-size:16px;
+        font-style: Regular;
+        font-family:roboto;
+        
+      }
+      .restaurants a{
+        border-width: 1px;
+        color: white;
+        text-decoration: none;
+} 
+      .restaurants{
+        display: flex;
+        margin-top: 1%;
+         }
+      .restaurants_wrapper{
+        margin-left:5%;
+        margin-right:5%;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9{
+        display:flex;
+        width: calc(33.33% - 8px);
+        align-content:center;
+        height: 366px;
+        margin-bottom:2%;
+      }
+      .content_img{
+        height: 70%;
+        width: 100%;
+        display: block;
+       }
+      .content_info1{
+        display: flex;
+        flex-direction:column;
+        height:28%;
+        color: black;
+      }
+      .street_name, .food_type, .travel_time{
+        display: flex;
+      }
+
+
+
+
+
+      .footer{
+        background-color: #262626;
+      }
+
+      .footer a{
+        border-width: 1px;
+        color: white;
+        text-decoration: none;
+} 
+      .footer_logo{
+        display:flex;
+        justify-content: flex-start;
+      }
+      .uber_part2{
+       color: white;
+        letter-spacing: 3px;
+        font-weight: bold;
+      }
+      .eats_part2{
+        margin-left:5px;
+        color:green;
+        letter-spacing: 3px;
+      }
+      .footer_wrapper{
+        display:flex;
+        justify-content: space-between;
+        border-top-style: solid;
+        color: white;
+        padding-top: 2%;
+      }
+      .footer_container1{
+        display: flex;
+        flex-direction:column;
+      }
+      .lang_select{
+        display: flex;
+        height: 40px;
+        width: 227px;
+      }
+      .lang_select select {
+         display: block;
+         background: transparent;
+         border: none;
+         color:white;
+         font-size: 20px;
+         height: 40px;
+         width:100%;
+      }
+      .hashtag{
+        display: flex;
+      }
+      
+      .hashtag_1{
+       color: green;
+      }
+      
+      .media_url{
+        display: flex;
+        justify-content: space-between;
+        width:25%;
+      }
+      
+      .mobile_url{
+         border-top-style: solid;
+         border-bottom-style: solid;
+         color:white;
+      }
+      
+      .mobile_url{
+        display:flex;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        
+      }
+      .apple{
+        padding-left: 5%;
+      }
+      .footer_end{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      
+      #footer_button {
+        display: none;
+        background-color: green;
+        color: white;
+        width: 80px;
+        height:80px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border-radius: 3px;
+        border-style: none;
+        font-size: 40px; 
+      }
+      

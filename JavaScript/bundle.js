@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         document.getElementById("footer_button").style.display = "block";
     } else {
         document.getElementById("footer_button").style.display = "none";
