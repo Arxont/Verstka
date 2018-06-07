@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     /* mobile*/
     .col-s1 {width: 8.33%;}
     .col-s2 {width: 16.66%;}
@@ -21,7 +21,7 @@
       justify-content: space-between;}   
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px)and ( max-width: 768px) {
     /* tablet*/
     .col-m1 {width: 8.33%;}
     .col-m2 {width: 16.66%;}
@@ -38,7 +38,8 @@
       display: flex;
       max-width: 768px;
       margin: auto;
-      justify-content: space-between;}   
+      justify-content: space-between;
+    background-color: red;}   
 }
 
 
@@ -112,13 +113,18 @@ header_m{
     height: 38px;
     width: 215px;
     border-style: none;
-    Font Family: Roboto;
-    Font Style Regular;
-    Font Size: 16px;
-    Line Height: 24px;
+    font-family: Roboto;
+    font-style:  Regular;
+    font-size: 16px;
+    line-height: 24px;
    } 
+   
+   .header_login{
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px; 
+  }
     .header_asap{
-     font-weight: bold;
      font-size:13px;
      font-style: medium;
      font-family:roboto;
@@ -130,42 +136,33 @@ header_m{
      margin-bottom: 1%;
      background-color:white;
     } 
-
-    .header_login{
-        display: flex;
-        margin-top: 16px;
-        margin-bottom: 16px; 
-      }
       
-      .bag_icon{
+.bag_icon{
         font-size: 30px;
         margin-top: 1%;
         margin-bottom: 1%;
 
-       }
+}
       
-      .header_signin{
-        background-color: white;
-        color: black;
-        font-weight: bold;
-        font-size:13px;
-        font-style: medium;
-        font-family:roboto;
-        line-height: 24px;
-        border-radius: 2px;
-        border-color: #e7e7e7;
-        height: 40px;
-        width: 80px;
-        margin-top: 1%;
-        margin-right:5%;
-        margin-bottom: 1%;
-        
-      }
+.header_signin{
+  background-color: white;
+  color: black;
+  font-size:13px;
+  font-style: medium;
+  font-family:roboto;
+  line-height: 24px;
+  border-radius: 2px;
+  border-color: #e7e7e7;
+  height: 40px;
+  width: 80px;
+  margin-top: 1%;
+  margin-right:5%;
+  margin-bottom: 1%;
+}
       .header_reg{
         background-color: black;
         border-style: none;
         color: White;
-        font-weight: bold;
         font-size:13px;
         font-style: medium;
         font-family:roboto;
@@ -200,7 +197,6 @@ header_m{
         width:100%;
         height:100%;
         border-style: none;
-        font-weight: bold;
         font-size:16px;
         font-style: Regular;
         font-family:roboto;
@@ -267,7 +263,6 @@ header_m{
       .uber_part2{
        color: white;
         letter-spacing: 3px;
-        font-weight: bold;
       }
       .eats_part2{
         margin-left:5px;
@@ -342,8 +337,8 @@ header_m{
         width: 80px;
         height:80px;
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 1%;
+        right: 1%;
         border-radius: 3px;
         border-style: none;
         font-size: 40px; 
