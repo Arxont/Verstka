@@ -21,6 +21,9 @@
 
 .col-5 {
   width: 41.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .col-6 {
@@ -53,10 +56,7 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 1124px;
-  margin: auto;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  margin: auto; 
 }
 
 p,
@@ -72,6 +72,13 @@ h3 {
   border-bottom: solid;
   border-radius: 2px;
   border-color: #e7e7e7;
+}
+.header_container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .mobile_header {
@@ -269,9 +276,6 @@ search_mobile {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .content1,
@@ -294,7 +298,7 @@ search_mobile {
 }
 
 .content_img {
-  height: 70%;
+  height: auto;
   width: 100%;
   display: block;
 }
@@ -312,7 +316,7 @@ search_mobile {
 }
 
 .street_name,
-.food_type,
+.food_price_type,
 .travel_time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,6 +452,73 @@ search_mobile {
   border-radius: 3px;
   border-style: none;
   font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.restaurant_presentation{
+  display: flex;
+  background-image: url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 364px;
+}
+
+.restaurant_info{
+  display: flex;
+  width:304px;
+  height: 204px;
+  margin-top: 80px;
+  margin-bottom:  80px;
+  flex-direction: column;
+}
+.h123{
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter_type{
+  display:flex;
+}
+.snacks, .salads, .soups, .hot_dish, .side_dish, .desserts{
+  margin-right: 8px;
+}
+
+.filter_content{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: red;
+}
+.box_1, .box_2{
+  width: 50%;
+  display: flex;
+  height: 207px;
+  margin-bottom: 2%;
+  background-color: blue;
+}
+
+
+.filter_img1, .filter_img2 {
+  width: 100%;
+  display: block;
 }
 
 @media only screen and (max-width: 400px) {

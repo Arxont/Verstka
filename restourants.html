@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<!--home-->
+  <!--home-->
   <link rel="stylesheet" href="/home/feid/Git/Uber Eats/Verstka/CSS/Styles.css">
   <link rel="stylesheet" href="/home/feid/Git/Uber Eats/Verstka/CSS/normalize.css">
   <script src="/home/feid/Git/Uber Eats/Verstka/JavaScript/bundle.js"></script>
@@ -21,32 +21,100 @@
 <body>
   <header class="header col-m12 col-s12">
     <div class="col-12 col-m12">
-
-      <div class="header_logo">
-        <p class="uber_part">UBER</p>
-        <p class="eats_part">EATS</p>
-      </div>
-      <div class="header_search">
-        <button type="button" class="header_asap">ASAP</button>
-        <p>to:</p>
-        <div class="imput_wrapper">
-          <span class="header_search_icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </span>
-          <input type="search" class="street_search" name="s_serch" placeholder="Type here">
+      <div class="header_container">
+        <div class="header_logo">
+          <p class="uber_part">UBER</p>
+          <p class="eats_part">EATS</p>
+        </div>
+        <div class="header_search">
+          <button type="button" class="header_asap">ASAP</button>
+          <p>to:</p>
+          <div class="imput_wrapper">
+            <span class="header_search_icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input type="search" class="street_search" name="s_serch" placeholder="Type here">
+          </div>
+        </div>
+        <div class="header_login">
+          <button type="button" class="header_signin">Sign in</button>
+          <button type="button" class="header_reg">Register</button>
+          <div class="bag_icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
         </div>
       </div>
-      <div class="header_login">
-        <button type="button" class="header_signin">Sign in</button>
-        <button type="button" class="header_reg">Register</button>
-        <div class="bag_icon">
-          <i class="fas fa-shopping-bag"></i>
-        </div>
-      </div>
-
     </div>
   </header>
   <main>
+    <div class="restaurant_presentation">
+      <div class="col-12">
+        <div class="col-5">
+          <div class="restaurant_info">
+            <h1 class="street_name">Шаверма-Минская</h1>
+            <div class="h123">
+              <p class="food_price_type">Шаурма</p>
+              <p class="travel_time">10-15 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-7"></div>
+      </div>
+    </div>
+    <div class="filter">
+      <div class="col-12">
+        <div class="filter_type">
+          <a class="snacks" href="https://www.123.com">
+            <p>Snacks</p>
+          </a>
+          <a class="salads" href="https://www.123.com">
+            <p>Salads</p>
+          </a>
+          <a class="soups" href="https://www.123.com">
+            <p>Soups</p>
+          </a>
+          <a class="hot_dish" href="https://www.123.com">
+            <p>Hot dishes</p>
+          </a>
+          <a class="side_dish" href="https://www.123.com">
+            <p>Side dishes</p>
+          </a>
+          <a class="desserts" href="https://www.123.com">
+            <p>Desserts</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fcontent_name col-12">
+      <h3> Snacks</h3>
+    </div>
+
+    <div class="filter_content col-12">
+      
+        <div class="box_1">
+          <div class="box_1info">
+            <p>shaverma</p>
+            <p>s sirom</p>
+            <p>240r</p>
+          </div>
+          <div class="box_1img">
+              <img class="filter_img1" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="food_img">
+          </div>
+        </div>
+        <div class="box_2">
+            <div class="box_2info">
+              <p>shaverma</p>
+              <p>s sirom</p>
+              <p>240r</p>
+            </div>
+            <div class="box_2img">
+                <img class="filter_img2" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="food_img">
+            </div>
+          </div>
+
+    </div>
 
   </main>
   <footer class="footer col-m12 col-s12">
