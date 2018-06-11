@@ -386,8 +386,8 @@ search_mobile {
 
 .lang_select select {
   display: block;
-  background: transparent;
   border: none;
+  background-color: #262626;
   color: white;
   font-size: 20px;
   height: 40px;
@@ -464,7 +464,9 @@ search_mobile {
 
 
 
-
+.mobile_filter{
+  display: none;
+}
 
 
 .restaurant_presentation{
@@ -477,8 +479,8 @@ search_mobile {
 
 .restaurant_info{
   display: flex;
-  width:304px;
-  height: 204px;
+  width: 41.66%;
+  height:204px;
   margin-top: 80px;
   margin-bottom:  80px;
   flex-direction: column;
@@ -494,6 +496,10 @@ search_mobile {
 }
 .snacks, .salads, .soups, .hot_dish, .side_dish, .desserts{
   margin-right: 8px;
+}
+
+.fcontent_wrapper{
+  display: flex;
 }
 
 .filter_content{
@@ -522,13 +528,16 @@ search_mobile {
 
 
 .box1_txt, .box2_txt, .box3_txt, .box4_txt, .box5_txt, .box6_txt{
-  width:60%;
+  flex-grow: 2;
+ 
 }
 .filter_img1, .filter_img2, .filter_img3, .filter_img4, .filter_img5, .filter_img6{
-  width:41%;
+  flex-grow: 1;
+  height: 100%;
   background-image: url("https://puu.sh/AD6nT/cde81ab398.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -654,6 +663,49 @@ search_mobile {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+
+
+
+
+
+  .filter{
+    display: none;
+  }
+  .fcontent_name{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .restaurant_presentation{
+    display: flex;
+    max-width: 400px;
+    background-image: url("https://s1.1zoom.ru/big0/511/French_fries_Fast_food_Ketchup_Cutting_board_542177_1280x853.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 364px;
+  }
+
+  .restaurant_info{
+    display: flex;
+    width: 58.33%;
+    height:180px;
+    margin-top: 80px;
+    margin-bottom:  80px;
+    flex-direction: column;
+    background-color:#FFFFFF;
+  }
+
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 1%;
+    border-style: none;
+    border-bottom: solid;
+  }
+
 }
 
 @media only screen and ( min-width: 401px) and (max-width: 768px) {
@@ -683,11 +735,11 @@ search_mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    width: calc(50% - 5px);
     -ms-flex-line-pack: center;
     align-content: center;
     height: 366px;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   .footer_logo {
     display: -webkit-box;
@@ -712,5 +764,34 @@ search_mobile {
   }
   .apple {
     padding-left: 5%;
+  }
+
+
+  .restaurant_presentation{
+    display: flex;
+    max-width: 768px;
+    background-image: url("https://s1.1zoom.ru/big0/511/French_fries_Fast_food_Ketchup_Cutting_board_542177_1280x853.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 364px;
+  }
+
+  .restaurant_info{
+    display: flex;
+    width: 58.33%;
+    height:180px;
+    margin-top: 80px;
+    margin-bottom:  80px;
+    flex-direction: column;
+    background-color:#FFFFFF;
+  }
+
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: #1D1D1D;
   }
 }
