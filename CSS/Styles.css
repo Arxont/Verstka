@@ -28,6 +28,7 @@
 
 .col-6 {
   width: 50%;
+  background-color: aqua;
 }
 
 .col-7 {
@@ -468,10 +469,9 @@ search_mobile {
 
 .restaurant_presentation{
   display: flex;
-  background-image: url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://s1.1zoom.ru/big0/511/French_fries_Fast_food_Ketchup_Cutting_board_542177_1280x853.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+  background-size: 100%;
   height: 364px;
 }
 
@@ -482,8 +482,9 @@ search_mobile {
   margin-top: 80px;
   margin-bottom:  80px;
   flex-direction: column;
+  background-color:#FFFFFF;
 }
-.h123{
+.info_wrapper{
   display: flex;
   justify-content: space-around;
 }
@@ -497,28 +498,37 @@ search_mobile {
 
 .filter_content{
   width: 100%;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.filter_content_wrapper{
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: red;
 }
-.box_1, .box_2{
-  width: 50%;
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6{
   display: flex;
-  height: 207px;
-  margin-bottom: 2%;
-  background-color: blue;
+  height: 160px;
+  width:calc(50% - 8px);
+  margin-bottom: 1%;
+  border-style: solid;
+  border-color: #1D1D1D;
 }
 
 
-.filter_img1, .filter_img2 {
-  width: 100%;
-  display: block;
+.box1_txt, .box2_txt, .box3_txt, .box4_txt, .box5_txt, .box6_txt{
+  width:60%;
+}
+.filter_img1, .filter_img2, .filter_img3, .filter_img4, .filter_img5, .filter_img6{
+  width:41%;
+  background-image: url("https://puu.sh/AD6nT/cde81ab398.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @media only screen and (max-width: 400px) {
