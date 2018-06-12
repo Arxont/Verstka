@@ -544,7 +544,6 @@ search_mobile {
   /* mobile*/
   .col-s12 {
     width: 100%;
-    max-width: 600px;
     margin: auto;
   }
   .header {
