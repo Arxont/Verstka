@@ -2,267 +2,194 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
+  <title>Main page</title>
+  <meta name="description" content="main page">
+  <meta name="author" content="SitePoint">
+
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <!--home-->
-  <link rel="stylesheet" href="/home/feid/Git/Uber Eats/Verstka/CSS/Styles.css">
-  <link rel="stylesheet" href="/home/feid/Git/Uber Eats/Verstka/CSS/normalize.css">
-  <script src="/home/feid/Git/Uber Eats/Verstka/JavaScript/bundle.js"></script>
-
-  <!--work-->
-  <link rel="stylesheet" href="D:\git\Verstka\CSS\Styles.css">
-  <link rel="stylesheet" href="D:\git\Verstka\CSS\normalize.css">
-  <script src="D:\git\Verstka\JavaScript\bundle.js"></script>
-
+  <link rel="stylesheet" href=".\CSS\Styles_new.css">
+  <link rel="stylesheet" href=".\CSS\normalize.css">
+  <script src=".\JavaScript\bundle.js"></script>
 </head>
 
 <body>
-  <header class="header col-m12 col-s12">
-    <div class="col-12 col-m12">
-      <div class="header_container">
-        <div class="header_logo">
-          <p class="uber_part">UBER</p>
-          <p class="eats_part">EATS</p>
-        </div>
-        <div class="header_search">
-          <button type="button" class="header_asap">ASAP</button>
-          <p>to:</p>
-          <div class="imput_wrapper">
-            <span class="header_search_icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </span>
-            <input type="search" class="street_search" name="s_serch" placeholder="Type here">
+  <div class="col-12 col-m-12">
+    <header>
+      <div class="col-l-12">
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <p class="uber_part">UBER</p>
+            <p class="eats_part">EATS</p>
           </div>
-        </div>
-        <div class="header_login">
-          <button type="button" class="header_signin">Sign in</button>
-          <button type="button" class="header_reg">Register</button>
-          <div class="bag_icon">
-            <i class="fas fa-shopping-bag"></i>
+          <div class="header_search">
+            <button type="button" class="asap">ASAP</button>
+            <p>to:</p>
+            <div class="imput_wrapper">
+              <span class="header_search_icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <input type="search" class="street_search" name="s_serch" placeholder="Type here">
+            </div>
+          </div>
+          <div class="header_login">
+            <button type="button" class="header_signin">Sign in</button>
+            <button type="button" class="header_reg">Register</button>
+            <div class="bag_icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
+    </header>
 
-    <div class="restaurant_presentation">
-       <div class="col-12">
-          <div class="restaurant_info">
-            <h1 class="street_name">Шаверма-Минская</h1>
-            <div class="info_wrapper">
-              <p class="food_price_type">Шаурма</p>
-              <p class="travel_time">10-15 min</p>
+    <div class="col-l-12">
+
+    <section class="restaurant_presentation">
+      <div class="reastaurant_info">
+        <h2>placeholder</h2>
+        <p>$$$ · placeholder</p>
+        <p>40-50min</p>
+      </div>
+    </section>
+<section class="mobile_menu_filter">
+  <div class="filter_wrapper">
+    <select class="filter_select">
+        <option value="Snacks">Snacks</option>
+        <option value="Salads">Salads</option>
+        <option value="Hot dishes">Hot dishes</option>
+        <option value="Side dishes">Side dishes</option>
+        <option value="Desserts">Desserts</option>
+      </select>
+      </div>
+</section>
+    <main>
+
+    </main>
+    </div>
+    <footer class="footer">
+      <div class="col-l-12">
+        <div class="footer_logo">
+          <p class="uber_part2">UBER</p>
+          <p class="eats_part2">EATS</p>
+        </div>
+        <section class="footer_wrapper">
+          <div class="footer_container1">
+            <div class="lang_select">
+              <select name="language">
+                <option value="English">English</option>
+                <option value="Russian">Russian</option>
+              </select>
+            </div>
+            <div class="hashtag">
+              <p class="hashtag_1">#</p>
+              <p>UberEats</p>
+            </div>
+            <div class="media_wrapper">
+              <div class="media_url">
+                <p>
+                  <a href="https://www.facebook.com" class="facebook_url">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="https://www.twitter.com" class="twitter_url">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </p>
+                <p>
+                  <a href="https://instagram.com" class="instagram_url">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-      </div> 
-    </div>
-    <div class="filter">
-      <div class="col-12">
-        <div class="filter_type">
-          <a class="snacks" href="https://www.123.com">
-            <p>Snacks</p>
-          </a>
-          <a class="salads" href="https://www.123.com">
-            <p>Salads</p>
-          </a>
-          <a class="soups" href="https://www.123.com">
-            <p>Soups</p>
-          </a>
-          <a class="hot_dish" href="https://www.123.com">
-            <p>Hot dishes</p>
-          </a>
-          <a class="side_dish" href="https://www.123.com">
-            <p>Side dishes</p>
-          </a>
-          <a class="desserts" href="https://www.123.com">
-            <p>Desserts</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="fcontent_name">
-      <h3> Snacks</h3>
-      </div>
-    </div>
+          <div class="footer_container2">
+            <div class="about_uber">
+              <p>
+                <a href="https://www.123.com">About Ubereats</a>
+              </p>
+            </div>
+            <div class="delivery_partner">
+              <p>
+                <a href="https://www.123.com">Become a delivery Partner</a>
+              </p>
+            </div>
+            <div class="restaurant_partner">
+              <p>
+                <a href="https://www.123.com">Become a restaurant Partner</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer_container3">
+            <div class="clients">
+              <p>
+                <a href="https://www.123.com">See all clients</a>
+              </p>
+            </div>
+            <div class="pricing">
+              <p>
+                <a href="https://www.123.com">Pricing</a>
+              </p>
+            </div>
+            <div class="support">
+              <p>
+                <a href="https://www.123.com">Help</a>
+              </p>
+            </div>
+            <div class="faq">
+              <p>
+                <a href="https://www.123.com">FAQ</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mobile_url">
+          <div class="android">
+            <p>
+              <a href="https://www.123.com">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </p>
+          </div>
+          <div class="apple">
+            <p>
+              <a href="https://www.123.com">
+                <i class="fab fa-app-store-ios"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+        <section class="footer_end">
+          <div class="copyrights">
+            <p>
+              <a href="https://www.123.com">© 2018 Uber Tehnologis Inc.</a>
+            </p>
+          </div>
+          <div class="privacy">
+            <p>
+              <a href="https://www.123.com">Privacy</a>
+            </p>
+          </div>
+          <div class="terms">
+            <p>
+              <a href="https://www.123.com">Terms</a>
+            </p>
+          </div>
+          <div class="footer_b">
 
-
-<div class="col-12">
-    <div class="filter_content">
-<div class="filter_content_wrapper">
-        <div class="box_1">
-            <div class="box1_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img1"> </div>
-        </div>
-        <div class="box_2">
-            <div class="box2_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img2"></div>
-        </div>
-        <div class="box_3">
-            <div class="box3_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img3"></div>
-        </div>
-        <div class="box_4">
-            <div class="box4_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img4"></div>
-        </div>
-        <div class="box_5">
-            <div class="box5_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img5"></div>
-        </div>
-        <div class="box_6">
-            <div class="box6_txt">
-            <p>shaverma</p>
-            <p>s sirom</p>
-            <p>240r</p>
-            </div>
-            <div class="filter_img6"></div>
-        </div>
-</div>
-
+            <button onclick="topFunction()" id="footer_button" title="Go top">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </section>
+    </footer>
     </div>
   </div>
-  </main>
-  <footer class="footer col-m12 col-s12">
-    <div class="footer_logo col-12 col-m12 col-s12">
-      <p class="uber_part2">UBER</p>
-      <p class="eats_part2">EATS</p>
-    </div>
-    <div class="footer_wrapper col-12 col-m12 col-s12">
-      <div class="footer_container1">
-        <div class="lang_select">
-          <select name="language">
-            <option value="English">English</option>
-            <option value="Russian">Russian</option>
-          </select>
-        </div>
-        <div class="hashtag">
-          <p class="hashtag_1">#</p>
-          <p>UberEats</p>
-        </div>
-        <div class="media_wrapper">
-          <div class="media_url">
-            <p>
-              <a href="https://www.facebook.com" class="facebook_url">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </p>
-            <p>
-              <a href="https://www.twitter.com" class="twitter_url">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-            </p>
-            <p>
-              <a href="https://instagram.com" class="instagram_url">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer_container2">
-        <div class="about_uber">
-          <p>
-            <a href="https://www.123.com">About Ubereats</a>
-          </p>
-        </div>
-        <div class="delivery_partner">
-          <p>
-            <a href="https://www.123.com">Become a delivery Partner</a>
-          </p>
-        </div>
-        <div class="restaurant_partner">
-          <p>
-            <a href="https://www.123.com">Become a restaurant Partner</a>
-          </p>
-        </div>
-      </div>
-      <div class="footer_container3">
-        <div class="clients">
-          <p>
-            <a href="https://www.123.com">See all clients</a>
-          </p>
-        </div>
-        <div class="pricing">
-          <p>
-            <a href="https://www.123.com">Pricing</a>
-          </p>
-        </div>
-        <div class="support">
-          <p>
-            <a href="https://www.123.com">Help</a>
-          </p>
-        </div>
-        <div class="faq">
-          <p>
-            <a href="https://www.123.com">FAQ</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="mobile_url col-12 col-m12 col-s12">
-      <div class="android">
-        <p>
-          <a href="https://www.123.com">
-            <i class="fab fa-google-play"></i>
-          </a>
-        </p>
-      </div>
-      <div class="apple">
-        <p>
-          <a href="https://www.123.com">
-            <i class="fab fa-app-store-ios"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-    <div class="footer_end col-12 col-m12 col-s12">
-      <div class="copyrights">
-        <p>
-          <a href="https://www.123.com">© 2018 Uber Tehnologis Inc.</a>
-        </p>
-      </div>
-      <div class="privacy">
-        <p>
-          <a href="https://www.123.com">Privacy</a>
-        </p>
-      </div>
-      <div class="terms">
-        <p>
-          <a href="https://www.123.com">Terms</a>
-        </p>
-      </div>
-      <div class="footer_b">
-
-        <button onclick="topFunction()" id="footer_button" title="Go top">
-          <i class="fas fa-arrow-up"></i>
-        </button>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
