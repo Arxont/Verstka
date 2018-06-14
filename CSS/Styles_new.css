@@ -351,6 +351,9 @@ main a {
   font-size: 40px;
 }
 
+
+
+
 a {
   Font-Family: Roboto;
   Font-Style: Regular;
@@ -468,8 +471,15 @@ a {
 display: flex;
 flex-direction: column;
   flex-grow: 2;
+  width: 206px;
 }
 
+ .filter_content p{
+  white-space: nowrap; 
+  max-width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
 
 
 .filter_img1,
@@ -479,6 +489,7 @@ flex-direction: column;
 .filter_img5,
 .filter_img6 {
   flex-grow: 1;
+  width: 102px;
   height: 100%;
   background-image: url("https://puu.sh/AD6nT/cde81ab398.png");
   background-repeat: no-repeat;
@@ -827,6 +838,21 @@ flex-direction: column;
   .desserts {
     margin-right: 8px;
   }
+
+
+.box1_txt,
+.box2_txt,
+.box3_txt,
+.box4_txt,
+.box5_txt,
+.box6_txt {
+
+  max-width: 552px;
+}
+
+
+
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -933,4 +959,18 @@ flex-direction: column;
   .box_6 {
     width: calc(50% - 8px);
   }
+  
+.box1_txt,
+.box2_txt,
+.box3_txt,
+.box4_txt,
+.box5_txt,
+.box6_txt {
+  max-width: 300px;
+}
+
+.box1_txt p{
+  max-width: 300px; 
+}
+
 }
