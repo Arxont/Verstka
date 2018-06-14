@@ -344,7 +344,14 @@ Line-Height: 13px;
 
 
 
-
+a{
+    Font-Family: Roboto;
+    Font-Style: Regular;
+    Font-Size: 16px;
+    Line-Height: 24px;
+    color: black;
+    text-decoration: none;
+  }
 
 .restaurant_presentation{
   display: flex;
@@ -354,11 +361,36 @@ Line-Height: 13px;
   height: 255px;
 }
 .reastaurant_info{
-background-color:white;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:#FFFFFF;
 width: 308px;
 height: 180px;
 margin: auto;
 margin-top: 131px;
+border-style: solid;
+border-width: 1px;
+border-color: #ECECEC;
+box-shadow: 1px 1px #ECECEC;
+}
+
+
+.timer{
+display: flex;
+background-color: #1D1D1D;
+border-radius: 16px;
+width: 98px;
+height: 32px;
+color: white;
+}
+
+.timer_data{
+margin: auto;
+Font-Family: Roboto;
+Font-Style: Regular;
+Font-Size: 13px;
+Line-Height: 15px;
 }
 
 .filter_wrapper{
@@ -392,13 +424,11 @@ margin-top: 131px;
 
 .filter_content{
   width: 100%;
+  height: 100%;
   margin-top: 32px;
-  margin-bottom: 40px;
 }
 .filter_content_wrapper{
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -767,13 +797,31 @@ margin-top: 131px;
 
 
 
+
+.restaurant_presentation{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reastaurant_info{
+  width: 41.6665%;
+  height: 204px;
+  margin-right: 58.3331%;
+  margin-top: auto;
+  border-style: none;
+  }
+
+
 .mobile_menu_filter{
   display: none;
 }
 
+
 .filter_type{
   display:flex;
 }
+
 .snacks, .salads, .soups, .hot_dish, .side_dish, .desserts{
   margin-right: 8px;
 }
@@ -835,15 +883,29 @@ margin-top: 131px;
 
 
 
-
+.col-m-12{
+  max-width: unset;
+}
  
   .reastaurant_info{
+   flex-wrap: wrap;
+   flex-direction: row; 
   width: 41.6665%;
   height: 204px;
   margin-right: 58.3331%;
   margin-top: auto;
+  border-style: none;
   }
-  
+
+  .r_name{
+width: 100%;
+text-align: center;
+  }
+  .price_time{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
 
   .mobile_menu_filter{
     display: none;
@@ -853,6 +915,7 @@ margin-top: 131px;
   .filter_type{
     display:flex;
   }
+
 
   .snacks, .salads, .soups, .hot_dish, .side_dish, .desserts{
     margin-right: 8px;
