@@ -7,6 +7,7 @@
   "author": "Feid <b.evg.ua@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "gulp": "^3.9.1",
     "html-minifier": "^3.5.16",
     "react": "^16.4.0"
   },
