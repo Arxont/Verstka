@@ -320,7 +320,6 @@ main a {
 }
 
 .container_img {
-  height: 250px;
   width: auto;
   max-width: 100%;
 }
@@ -852,7 +851,6 @@ display: flex;
     height: auto;
     width: 100%;
     display: block;
-    max-width: 376px;
   }
   .footer {
     background-color: #262626;
